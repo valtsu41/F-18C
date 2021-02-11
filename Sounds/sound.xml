@@ -28,8 +28,8 @@
        <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
    </engine>
-   
-   
+
+
    <engine>
       <name>engine-start-inside</name>
       <mode>once</mode>
@@ -55,7 +55,7 @@
        <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
    </engine>
-   
+
    <engine>
       <name>engine-start-outside</name>
       <mode>once</mode>
@@ -66,12 +66,12 @@
                 <property>velocities/groundspeed-kt</property>
                 <value>1</value>
             </less-than>
-<greater-than>  
+<greater-than>
    <property>engines/engine[0]/rpm</property>
    <value>0.5</value>
-   
+
   </greater-than>
-  
+
   <not>
    <property>/sim/current-view/internal</property>
   </not>
@@ -93,7 +93,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-	
+
 	<engine>
       <name>engine-start-outside1</name>
       <mode>once</mode>
@@ -104,12 +104,12 @@
                 <property>velocities/groundspeed-kt</property>
                 <value>1</value>
             </less-than>
-<greater-than>  
+<greater-than>
    <property>engines/engine[1]/rpm</property>
    <value>0.5</value>
-   
+
   </greater-than>
-  
+
   <not>
    <property>/sim/current-view/internal</property>
   </not>
@@ -131,7 +131,7 @@
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
     </engine>
-	
+
 	 <shutdown>
    <name>shutdown1</name>
    <path>Aircraft/F-18C/Sounds/shutdown-ext.wav</path>
@@ -145,7 +145,7 @@
      </equals>
    </condition>
   </shutdown>
-  
+
    <shutdown>
    <name>shutdown2</name>
    <path>Aircraft/F-18C/Sounds/shutdown-ext.wav</path>
@@ -159,11 +159,11 @@
      </equals>
    </condition>
   </shutdown>
-  
-  
 
-  
-  
+
+
+
+
   <shutdown>
    <name>shutdown3</name>
    <path>Aircraft/F-18C/Sounds/shutdown.wav</path>
@@ -175,7 +175,7 @@
      </equals>
    </condition>
   </shutdown>
-  
+
    <shutdown>
    <name>shutdown4</name>
    <path>Aircraft/F-18C/Sounds/shutdown.wav</path>
@@ -187,7 +187,7 @@
      </equals>
    </condition>
   </shutdown>
-  
+
     <engine>
       <name>engine</name>
       <path>Aircraft/F-18C/Sounds/jet-blast.wav</path>
@@ -212,17 +212,17 @@
     <outer-angle>90</outer-angle>
     <outer-gain>0.45</outer-gain>
    </orientation>
- 
+
    <volume>
     <property>engines/engine[0]/n1</property>
     <factor>0.014</factor>
     <offset>-0.45</offset>
    </volume>
- 
+
    <reference-dist>20</reference-dist>
    <max-dist>3000</max-dist>
     </engine>
-	
+
 	<engine>
       <name>engine1</name>
       <path>Aircraft/F-18C/Sounds/jet-blast.wav</path>
@@ -247,13 +247,13 @@
     <outer-angle>90</outer-angle>
     <outer-gain>0.45</outer-gain>
    </orientation>
- 
+
    <volume>
     <property>engines/engine[1]/n1</property>
     <factor>0.014</factor>
     <offset>-0.45</offset>
    </volume>
- 
+
    <reference-dist>20</reference-dist>
    <max-dist>3000</max-dist>
     </engine>
@@ -279,7 +279,7 @@
         <offset>-0.1</offset>
       </pitch>
     </engine>
-	
+
 	 <engine>
       <name>whine1</name>
       <path>Aircraft/F-18C/Sounds/engine-exhaust.wav</path>
@@ -301,7 +301,7 @@
         <offset>-0.1</offset>
       </pitch>
     </engine>
-	
+
 	 <engine>
       <name>whine-int</name>
       <path>Aircraft/F-18C/Sounds/f16-engine-int.wav</path>
@@ -323,11 +323,11 @@
         <offset>-0.1</offset>
       </pitch>
     </engine>
-	
+
 	<engine>
    <name>Reheat</name>
    <mode>looped</mode>
-   <path>Aircraft/F-18C/Sounds/Afterburner_v3.wav</path>
+   <path>"Aircraft/F-18C/Sounds/Wav Fx/Afterburner_v3.wav"</path>
    <condition>
 	 <property>engines/engine/afterburner</property>
     	   <not>
@@ -355,7 +355,7 @@
    </volume>
   </engine>
 
-  
+
   <ignition>
    <name>Reheat Ignition</name>
    <mode>once</mode>
@@ -366,7 +366,7 @@
 	 </not>
 	   <not>
 		<property>/sim/current-view/external</property>
-		
+
      	   </not>
    </condition>
    <property>engines/engine/afterburner</property>
@@ -379,8 +379,8 @@
     <offset>0.25</offset>
    </volume>
   </ignition>
-  
-  
+
+
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
@@ -606,7 +606,7 @@
       </pitch>
     </squeal>
 
-    
+
 
     <flap>
       <name>flaps</name>
@@ -670,7 +670,7 @@
         <min>120.0</min>
       </volume>
     </stall>
-	
+
 	<speedbrake>
 			<name>speedbrake</name>
 			<mode>in-transit</mode>
@@ -691,8 +691,8 @@
 				<max>0.9</max>
 			</volume>
 		</speedbrake>
-		
-		
+
+
 		 <buffet>
    <name>alpha-buffet</name>
    <mode>looped</mode>
@@ -701,7 +701,7 @@
 		<property>orientation/alpha-deg</property>
 		<value>15</value>
 		</greater-than>
-     
+
    </condition>
    <path>Aircraft/F-18C/Sounds/rumble.wav</path>
    <volume>
@@ -725,7 +725,7 @@
     <max>0.3</max>
    </volume>
   </speedbrake-buffet>
-	
+
 	 <!-- flyby -->
 		<flyby>
 			<name>fly-by</name>
@@ -751,9 +751,9 @@
 				<property>velocities/airspeed-kt</property>
 				<factor>0.001</factor>
 			</volume>
-			
+
 		</flyby>
-		
+
 		 <!-- Sonic Boom -->
   <sonicboom>
    <name>Sonic Boom</name>
@@ -772,7 +772,7 @@
 	</and>
    </condition>
   </sonicboom>
-  
+
   	<voice>
   <name>Geforce-breath-vox</name>
   <path>Aircraft/F-18C/Sounds/Geforce.wav</path>
@@ -780,7 +780,7 @@
    <greater-than>
     <property>/accelerations/pilot/z-accel-fps_sec</property>
     <value>-161</value>
-   </greater-than>   
+   </greater-than>
   </condition>
 <volume>
 <factor>0.9</factor>
@@ -794,13 +794,13 @@
    <less-than>
     <property>/accelerations/pilot/z-accel-fps_sec</property>
     <value>-225</value>
-   </less-than>   
+   </less-than>
   </condition>
 <volume>
 <factor>0.9</factor>
 </volume>
  </voice>
- 
+
  <crash>
   <name>intense ground contact</name>
   <mode>once</mode>
@@ -823,7 +823,7 @@
                 <property>velocities/airspeed-kt</property>
                 <value>120</value>
             </less-than>
-          
+
         </condition>
         <volume>
             <max>0.5</max>
@@ -835,8 +835,8 @@
         </position>
         <reference-dist>1.0</reference-dist>
         <max-dist>2.0</max-dist>
-    </stall>	
-	
+    </stall>
+
 	<pullup>
         <name>pullup</name>
         <mode>looped</mode>
@@ -846,12 +846,12 @@
                     		<property>position/altitude-agl-ft</property>
                     		<value>250</value>
                   	</less-than-equals>
-            
+
                 <equals>
               <property>/gear/gear[0]/position-norm</property>
               <value>0</value>
              </equals>
-           
+
         </condition>
         <volume>
             <max>0.5</max>
@@ -863,7 +863,7 @@
         </position>
         <reference-dist>1.0</reference-dist>
         <max-dist>2.0</max-dist>
-    </pullup>	
+    </pullup>
 
 <!-- no binding yet?
     <click>
@@ -875,11 +875,11 @@
       <name>gunfire</name>
       <mode>looped</mode>
       <path>Aircraft/F-18C/Sounds/m61.wav</path>
-      <condition> 
+      <condition>
         <property>controls/armament/trigger</property>
         <property>ai/submodels/submodel/count</property>
       </condition>
-      <volume> 
+      <volume>
         <factor>1.2</factor>
         <max>1.0</max>
       </volume>
@@ -887,7 +887,7 @@
       <max-dist>1000</max-dist>
 	  <reference-dist>600.0</reference-dist>
     <max-dist>1000.0</max-dist>
-	  
+
     </guns>
 
 	 <low-fuel>
@@ -899,7 +899,7 @@
      <property>/consumables/fuel/total-fuel-gals</property>
     <value>200.00</value>
     </less-than>
-	
+
   </condition>
 </low-fuel>
 
@@ -912,7 +912,7 @@
      <property>/consumables/fuel/total-fuel-gals</property>
     <value>150.0</value>
     </less-than>
-	
+
   </condition>
 </low-fuel2>
 
@@ -925,7 +925,7 @@
      <property>/consumables/fuel/total-fuel-gals</property>
     <value>100.00</value>
     </less-than>
-	
+
   </condition>
 </low-fuel3>
 
@@ -938,7 +938,7 @@
      <property>/consumables/fuel/total-fuel-gals</property>
     <value>50.00</value>
     </less-than>
-	
+
   </condition>
 </low-fuel4>
 
@@ -951,7 +951,7 @@
      <property>/consumables/fuel/total-fuel-gals</property>
     <value>1.0</value>
     </less-than>
-	
+
   </condition>
 </low-fuel5>
 
@@ -980,8 +980,8 @@
 				<max>1.0</max>
 			</volume>
 		</click>
-		
-		
+
+
 		<click>
 			<name>canopy click up</name>
 			<path>Aircraft/F-18C/Sounds/click.wav</path>
