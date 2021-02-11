@@ -327,7 +327,7 @@
 	<engine>
    <name>Reheat</name>
    <mode>looped</mode>
-   <path>Aircraft/F-18C/Sounds/reheat.wav</path>
+   <path>Aircraft/F-18C/Sounds/Afterburner_v3.wav</path>
    <condition>
 	 <property>engines/engine/afterburner</property>
     	   <not>
@@ -350,8 +350,8 @@
    </orientation>
    <volume>
         <offset>1</offset>
-	<min>0.3</min>
-	<max>1.0</max>
+	<min>0.6</min>
+	<max>2.0</max>
    </volume>
   </engine>
 
