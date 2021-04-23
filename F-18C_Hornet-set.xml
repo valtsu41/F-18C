@@ -853,8 +853,8 @@
             <file>Aircraft/F-18C/Nasal/Loading_Missiles.nas</file>
         </missile>
         <notifications>
-            <file>Aircraft/F-18C/Nasal/ArmamentNotifications.nas</file>
-            <file>Aircraft/F-18C/Nasal/GeoBrigedTransmitter.nas</file>
+            <file>Aircraft/F-18C/Nasal/ArmamentNotification.nas</file>
+            <file>Aircraft/F-18C/Nasal/GeoBridgedTransmitter.nas</file>
         </notifications>
         <damage>
             <file>Aircraft/F-18C/Nasal/damage.nas</file>
