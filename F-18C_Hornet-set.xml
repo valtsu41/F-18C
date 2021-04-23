@@ -604,6 +604,12 @@
             <serviceable type="bool">true</serviceable>
         </refuel>
     </systems>
+    <payload>
+        <armament>
+            <models>Aircraft/F-18C/Models/Armament/</models>
+            <MLW-count>0</MLW-count>
+        </armament>
+    </payload>
     <!-- set up control properties for YASim -->
     <controls>
         <trigger type="bool">false</trigger>
